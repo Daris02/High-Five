@@ -1,0 +1,10 @@
+.picture2 {
+    display: none;
+    height: 17vh;
+}
+.card-deck:hover .picture1 {
+    display: none;
+}
+.card-deck:hover .picture2 {
+    display: block;
+}
