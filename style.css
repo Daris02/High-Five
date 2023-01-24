@@ -1,6 +1,7 @@
 .D-picture2 {
     display: none;
     height: 20vh;
+    transition: 0.5s;
 }
 .card-deck:hover .D-picture1 {
     display: none;
