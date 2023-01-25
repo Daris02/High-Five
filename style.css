@@ -8,6 +8,7 @@
 .card-deck:hover .D-picture2 {
     display: block;
 }
+
 .content {
     display: flex;
     flex-direction: row;
