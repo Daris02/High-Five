@@ -1,12 +1,15 @@
 .D-picture2 {
     display: none;
+    opacity: 0;
     transition: 1s;
 }
 .card-deck:hover .D-picture1 {
     display: none;
+    opacity: 0;
 }
 .card-deck:hover .D-picture2 {
     display: block;
+    opacity: 1;
 }
 
 .content {
