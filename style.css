@@ -2,23 +2,22 @@ html{
     scroll-behavior: smooth;
 }
 
-.D-picture2 {
-    background-color: black;
+.D-picture {
+    transition: 1s ease-in-out;
+}
+.card-deck{
+    height: 25vh;
+}
+.card-deck:hover .D-picture {
+    background: black !important;
+}
+.card-deck .D-picture i {
     display: none;
-    opacity: 0;
-    transition: 1s;
 }
-.D-picture1 {
-    position: relative;
-}
-.card-deck:hover .D-picture1 {
-    display: none;
-    opacity: 0;
-}
-.card-deck:hover .D-picture2 {
+.card-deck .D-picture:hover i {
     display: block;
-    opacity: 1;
 }
+
 .btn_send_message:hover{
     background-color: rgb(255, 191, 0);
     color: black;
