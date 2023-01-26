@@ -1,14 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .D-picture2 {
+    background-color: black;
     display: none;
+    opacity: 0;
     transition: 1s;
+}
+.D-picture1 {
+    position: relative;
 }
 .card-deck:hover .D-picture1 {
     display: none;
+    opacity: 0;
 }
 .card-deck:hover .D-picture2 {
     display: block;
+    opacity: 1;
 }
-
+.btn_send_message:hover{
+    background-color: rgb(255, 191, 0);
+    color: black;
+}
 .content {
     display: flex;
     flex-direction: row;
