@@ -1,6 +1,12 @@
 html{
     scroll-behavior: smooth;
 }
+.teamIcon i{
+    transition: .5s;
+}
+.teamIcon i:hover{
+    color: #dfa408;
+}
 
 .btn_send_message:hover{
     background-color: rgb(255, 191, 0);
@@ -138,142 +144,5 @@ html{
     }
     #secondText{
         width: 65vw;
-    }
-}
-
-
-.containerHover{
-    width: 800px;
-}
-
-.myHover{
-    z-index: 1;
-    height: 200px;
-    width: 200px;
-}
-
-#imageHover{
-    height: 200px;
-    width: 200px;
-    opacity: 1;
-    transition: .5s;
-}
-.bgHover{
-    height: 200px;
-    width: 200px;
-    margin-top: -200px;
-    opacity: 0;
-    transition: .5s;
-}
-.icons{
-    height: 200px;
-    width: 200px;
-    margin-top: -200px;
-    opacity: 0;
-    transition: .5s;
-}
-.myHover:hover img{
-    opacity: 0 !important;
-}
-.myHover:hover .bgHover{
-    background-color: black;
-    opacity: 1;
-}
-.myHover:hover .icons{
-    opacity: 1;
-}
-@media screen and (max-width:370px) {
-    .containerHover{
-        width: 350px !important;
-    }
-    .myHover{
-        height: 350px;
-        width: 350px;
-    }
-    #imageHover{
-        height: 350px;
-        width: 350px;
-        opacity: 1;
-    }
-    .bgHover{
-        height: 350px;
-        width: 350px;
-        margin-top: -350px;
-    }
-    .icons{
-        height: 350px;
-        width: 350px;
-        margin-top: -350px;
-        opacity: 1 !important;
-    }
-    .myHover:hover .bgHover{
-        background-color: black;
-        opacity: 0;
-    }
-    .myHover:hover img{
-        opacity: 1 !important;
-    }
-    .bgHover i{
-        opacity: 0;
-    }
-}
-
-@media screen and (max-width:770px) {
-    .containerHover{
-        width: 750px;
-    }
-    .myHover{
-        height: 450px;
-        width: 450px;
-    }
-    #imageHover{
-        height: 450px;
-        width: 450px;
-    }
-    .bgHover{
-        height: 450px;
-        width: 450px;
-        margin-top: -450px;
-    }
-    .icons{
-        height: 450px;
-        width: 450px;
-        margin-top: -450px;
-        opacity: 1 !important;
-    }
-    .myHover:hover .bgHover{
-        background-color: black;
-        opacity: 0;
-    }
-    .myHover:hover img{
-        opacity: 1 !important;
-    }
-    .bgHover i{
-        opacity: 0;
-    }
-}
-@media screen and (max-width:1000px) {
-    .containerHover{
-        width: 950px;
-    }
-    .myHover{
-        height: 300px;
-        width: 300px;
-    }
-    #imageHover{
-        height: 300px;
-        width: 300px;
-    }
-    .bgHover{
-        height: 300px;
-        width: 300px;
-        margin-top: -300px;
-    }
-    .icons{
-        height: 300px;
-        width: 300px;
-        margin-top: -300px;
-        opacity: 0;
-        transition: .5s;
     }
 }
