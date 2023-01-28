@@ -1,0 +1,279 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.btn_send_message:hover{
+    background-color: rgb(255, 191, 0);
+    color: black;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar{
+    background-color:#3e5a84 ;
+}
+.account{
+    margin-left: -50px;
+}
+.icon{
+    margin-left: 20px;
+}
+.school{
+    color: #dfa408;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 3em;
+    animation: scale 1 2s ;
+}
+@keyframes scale{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.introduction{
+    background-color: #3e5a84;
+    width: 100%;
+    height: 100vh;
+}
+.menu ul li a{
+    position: relative;
+}
+.menu ul li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #dfa408;
+    transition: transform 0.8s ease-out;
+}
+.menu ul li a:hover::after{
+    transform: scaleX(1);
+}
+.hidden{
+    display: none;
+}
+.sign-in:hover{
+    color: white;
+    
+}
+.sign-in{
+    animation: sign 1 4s;
+}
+.arrow{
+    margin-left:48vw;
+    margin-top: 10em;
+    animation: arrow 5s 1;
+}
+@keyframes arrow {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes sign{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.pro{
+    animation: espace 1 3s;
+}
+@keyframes espace{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:576px){
+    .logo{
+        margin-left: 120px;
+    }
+}
+
+#firstText{
+    width: 45vw;
+}
+#secondText{
+    width: 50vw;
+}
+#emailInput,#nameInput{
+    height: 7vh;
+    width: 45%;
+}
+#messageInput{
+    height: 22vh;
+    width: 45%;
+}
+@media screen and (max-width:991.98px) {
+    #emailInput,#nameInput{
+        height: 5vh;
+        width: 80%;
+        margin-top:-4vh;
+        margin-bottom:-4vh;
+    }
+    #messageInput{
+        height: 15vh;
+        width: 80%;
+        margin-top:-4vh;
+        margin-bottom:-5vh;
+    }
+    #firstText{
+        width: 65vw;
+    }
+    #secondText{
+        width: 65vw;
+    }
+}
+
+
+.containerHover{
+    width: 800px;
+}
+
+.myHover{
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+}
+
+#imageHover{
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+    transition: .5s;
+}
+.bgHover{
+    height: 200px;
+    width: 200px;
+    margin-top: -200px;
+    opacity: 0;
+    transition: .5s;
+}
+.icons{
+    height: 200px;
+    width: 200px;
+    margin-top: -200px;
+    opacity: 0;
+    transition: .5s;
+}
+.myHover:hover img{
+    opacity: 0 !important;
+}
+.myHover:hover .bgHover{
+    background-color: black;
+    opacity: 1;
+}
+.myHover:hover .icons{
+    opacity: 1;
+}
+@media screen and (max-width:370px) {
+    .containerHover{
+        width: 350px !important;
+    }
+    .myHover{
+        height: 350px;
+        width: 350px;
+    }
+    #imageHover{
+        height: 350px;
+        width: 350px;
+        opacity: 1;
+    }
+    .bgHover{
+        height: 350px;
+        width: 350px;
+        margin-top: -350px;
+    }
+    .icons{
+        height: 350px;
+        width: 350px;
+        margin-top: -350px;
+        opacity: 1 !important;
+    }
+    .myHover:hover .bgHover{
+        background-color: black;
+        opacity: 0;
+    }
+    .myHover:hover img{
+        opacity: 1 !important;
+    }
+    .bgHover i{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .containerHover{
+        width: 750px;
+    }
+    .myHover{
+        height: 450px;
+        width: 450px;
+    }
+    #imageHover{
+        height: 450px;
+        width: 450px;
+    }
+    .bgHover{
+        height: 450px;
+        width: 450px;
+        margin-top: -450px;
+    }
+    .icons{
+        height: 450px;
+        width: 450px;
+        margin-top: -450px;
+        opacity: 1 !important;
+    }
+    .myHover:hover .bgHover{
+        background-color: black;
+        opacity: 0;
+    }
+    .myHover:hover img{
+        opacity: 1 !important;
+    }
+    .bgHover i{
+        opacity: 0;
+    }
+}
+@media screen and (max-width:1000px) {
+    .containerHover{
+        width: 950px;
+    }
+    .myHover{
+        height: 300px;
+        width: 300px;
+    }
+    #imageHover{
+        height: 300px;
+        width: 300px;
+    }
+    .bgHover{
+        height: 300px;
+        width: 300px;
+        margin-top: -300px;
+    }
+    .icons{
+        height: 300px;
+        width: 300px;
+        margin-top: -300px;
+        opacity: 0;
+        transition: .5s;
+    }
+}
