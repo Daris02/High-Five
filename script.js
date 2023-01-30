@@ -22,6 +22,8 @@ let temps3 = 0;
 let temps4 = 0;
 
 window.addEventListener("DOMContentLoaded",function(){
+    confirmation.classList.add("hidden");
+    error.classList.add("hidden");
     function mitombo1(){
         if(temps1<=20){
             timer1.innerText = temps1;
@@ -30,24 +32,62 @@ window.addEventListener("DOMContentLoaded",function(){
     }
     setInterval(mitombo1,62);
     function mitombo2(){
-        if(temps2<=120000){
+        if(temps2<=15){
             timer2.innerText = temps2;
-            temps2+=5000;
+            temps2+=1;
         }
     }
-    setInterval(mitombo2,55);
+    setInterval(mitombo2,90);
     function mitombo3(){
-        if(temps3<=1200){
+        if(temps3<=150){
             timer3.innerText = temps3;
-            temps3+=50;
+            temps3+=10;
         }
     }
-    setInterval(mitombo3,55);
+    setInterval(mitombo3,80);
     function mitombo4(){
-        if(temps4<=900){
+        if(temps4<=5){
             timer4.innerText = temps4;
-            temps4+=45;
+            temps4+=1;
         }
     }
-    setInterval(mitombo4,62);
+    setInterval(mitombo4,200);
+});
+const sign = document.getElementById("sendBtn");
+const input1 = document.getElementById("nameInput");
+const input2 = document.getElementById("birthInput");
+const input3 = document.getElementById("baccInput");
+const select1 = document.getElementById("serieInput");
+const select2 = document.getElementById("mentionInput");
+const input4 = document.getElementById("nomParentInput");
+const input5 = document.getElementById("phoneParentInput");
+const input6 = document.getElementById("phonestdInput");
+
+sign.addEventListener("click",function(){
+    if(input1.value != "" && input2.value != "" && input3.value != "" && select1.value != "" && input4.value != "" && input5.value != "" && input6.value != ""){
+        confirmation.classList.remove("hidden");
+        sendBtn.classList.add("hidden");
+        function afterValue(){
+            input1.value = "";
+            input2.value = "";
+            input3.value = "";
+            select1.value = "";
+            select2.value = "";
+            input4.value = "";
+            input5.value = "";
+            input6.value = "";
+            confirmation.classList.add("hidden");
+            sendBtn.classList.remove("hidden");
+        }
+        setTimeout(afterValue,2000);
+    }
+    else{
+        error.classList.remove("hidden");
+        sendBtn.classList.add("hidden");
+        function errorHide(){
+            error.classList.add("hidden");
+            sendBtn.classList.remove("hidden");          
+        }
+        setTimeout(errorHide,2000);
+    }
 })

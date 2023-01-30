@@ -112,32 +112,66 @@ html{
     }
 }
 
+#mainForm{
+    height: 105vh;
+}
 #firstText{
     width: 45vw;
 }
 #secondText{
     width: 50vw;
 }
-#emailInput,#nameInput{
+#birthInput,#nameInput,#baccInput,#sANDmInput,#parentInput{
     height: 7vh;
-    width: 45%;
+    width: 40vw;
 }
-#messageInput{
-    height: 22vh;
-    width: 45%;
+#phonestdInput{
+    height: 7vh;
+    width: 15vw;
+}
+#pAndCdrAndNote{
+    width: 68vw;
+}
+#serieInput,#mentionInput{
+    height: 7vh;
+    width: 18vw;
+}
+#sendBtn{
+    background-color: rgb(248, 164, 9);
+    color: white;
+    border: none;
+}
+#sendBtn:hover{
+    background-color: black;
 }
 @media screen and (max-width:991.98px) {
-    #emailInput,#nameInput{
-        height: 5vh;
-        width: 80%;
-        margin-top:-4vh;
-        margin-bottom:-4vh;
+    #mainForm{
+        height: 125vh;
     }
-    #messageInput{
-        height: 15vh;
-        width: 80%;
-        margin-top:-4vh;
-        margin-bottom:-5vh;
+    #nameInput{
+        height: 5vh;
+        width: 60vw;
+    }
+    #birthInput,#baccInput,#phonestdInput,#parentInput{
+        height: 5vh;
+        width: 60vw;
+    }
+    #parentInput{
+        height: 13.5vh;
+        width: 60vw;
+    }
+    #phoneParentInput,#nomParentInput{
+        height: 5vh;
+        width: 60vw;
+    }
+    #serieInput,#mentionInput{
+        height: 7vh;
+        width: 60vw;
+    }
+    #sANDmInput{
+        height: 5vh;
+        width: 60vw;
+        margin-bottom:17vh;
     }
     #firstText{
         width: 65vw;
@@ -145,4 +179,8 @@ html{
     #secondText{
         width: 65vw;
     }
+}
+.hidden{
+    display: none;
+    visibility: hidden;
 }
