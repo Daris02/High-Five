@@ -9,6 +9,7 @@
     width: 200px;
     opacity: 1;
     transition: .5s;
+    border-radius: 2%;
 }
 .bgHover{
     height: 200px;
@@ -16,6 +17,7 @@
     margin-top: -200px;
     opacity: 0;
     transition: .5s;
+    border-radius: 2%;
 }
 .icons{
     height: 200px;

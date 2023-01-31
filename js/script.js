@@ -7,6 +7,7 @@ const timer2 = document.getElementById("time2");
 const timer3 = document.getElementById("time3");
 const timer4 = document.getElementById("time4");
 const propos = document.querySelectorAll(".avg");
+const val = document.querySelectorAll('.val')
 
 // setTimeout(() => {
 //     school.classList.remove("hidden");
@@ -54,6 +55,66 @@ sr.reveal(propos,{
     origin:'top',
     distance:'30px'
 })
+sr.reveal('.valeur',{
+    scale:0.5,
+    reset:'true'
+})
+sr.reveal('.valeurs',{
+    scale:0.5,
+    delay:200,
+    reset:'true'
+})
+sr.reveal(val,{
+    origin:'left',
+    distance:'30px',
+    reset:'true',
+    delay:400
+})
+sr.reveal('.event',{
+    scale:0.5,
+    reset:'true'
+})
+sr.reveal('.events',{
+    scale:0.5,
+    delay:200,
+    reset:'true'
+})
+sr.reveal('.containerHover',{
+    origin:'left',
+    distance:'30px',
+    reset:'true',
+    delay:400
+})
+sr.reveal('.team',{
+    scale:0.5,
+    reset:'true'
+})
+sr.reveal('.teams',{
+    scale:0.5,
+    delay:200,
+    reset:'true'
+})
+sr.reveal('.one',{
+    opacity:0,
+    delay:400,
+    reset:'true'
+})
+sr.reveal('.two',{
+    opacity:0,
+    delay:600,
+    reset:'true'
+})
+sr.reveal('.three',{
+    opacity:0,
+    delay:800,
+    reset:'true'
+})
+sr.reveal('.four',{
+    opacity:0,
+    delay:1000,
+    reset:'true'
+})
+
 
 window.addEventListener("DOMContentLoaded",function(){
     confirmation.classList.add("hidden");
