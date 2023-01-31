@@ -33,14 +33,19 @@ html{
     margin-top: 3em;
     animation: scale 1 2s ;
 }
-@keyframes scale{
+.avg{
+    display:flex;
+    flex-direction: row;
+    gap:10px;
+}
+/* @keyframes scale{
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
     }
-}
+} */
 .introduction{
     background-color: #3e5a84;
     width: 100%;
@@ -78,7 +83,7 @@ html{
     margin-top: 10em;
     animation: arrow 5s 1;
 }
-@keyframes arrow {
+/* @keyframes arrow {
     from{
         opacity: 0;
     }
@@ -93,18 +98,18 @@ html{
     to{
         opacity: 1;
     }
-}
+} */
 .pro{
     animation: espace 1 3s;
 }
-@keyframes espace{
+/* @keyframes espace{
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
     }
-}
+} */
 
 @media screen and (max-width:576px){
     .logo{
@@ -183,4 +188,25 @@ html{
 .hidden{
     display: none;
     visibility: hidden;
+}
+
+@media screen and (max-width:580px){
+    #formulaire_footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #btn_footer{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:1000px){
+    #liste_footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

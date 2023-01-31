@@ -6,20 +6,54 @@ const timer1 = document.getElementById("time1");
 const timer2 = document.getElementById("time2");
 const timer3 = document.getElementById("time3");
 const timer4 = document.getElementById("time4");
+const propos = document.querySelectorAll(".avg");
 
-setTimeout(() => {
-    school.classList.remove("hidden");
-    setTimeout(()=>{
-        pro.classList.remove("hidden");
-        Sign.classList.remove("hidden");
-        arrow.classList.remove("hidden");
-    },1100)
-}, 600);
+// setTimeout(() => {
+//     school.classList.remove("hidden");
+//     setTimeout(()=>{
+//         pro.classList.remove("hidden");
+//         Sign.classList.remove("hidden");
+//         arrow.classList.remove("hidden");
+//     },1100)
+// }, 600);
 
 let temps1 = 0;
 let temps2 = 0;
 let temps3 = 0;
 let temps4 = 0;
+const sr = ScrollReveal({
+    duration:1000
+});
+sr.reveal(school,{
+    scale:0.5,
+    origin:'top'
+});
+sr.reveal(pro,{
+    delay:400,
+    scale:0.5
+})
+sr.reveal(Sign,{
+    delay:600,
+    scale:0.5
+});
+sr.reveal(arrow,{
+    opacity : 0,
+    delay:800
+})
+sr.reveal('.cdtn',{
+    scale:0.5,
+    delay:100
+})
+sr.reveal('#definition',{
+    scale:0.5,
+    delay:300
+})
+sr.reveal(propos,{
+    opacity:0,
+    delay:600,
+    origin:'top',
+    distance:'30px'
+})
 
 window.addEventListener("DOMContentLoaded",function(){
     confirmation.classList.add("hidden");
