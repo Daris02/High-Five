@@ -33,6 +33,13 @@ html{
 .icon{
     margin-left: 20px;
 }
+#icon{
+    transition: .5s;
+}
+#icon:hover{
+    color: #dfa408;
+    transform: scale(1.3);
+}
 .school{
     color: #dfa408;
     font-family: 'Times New Roman', Times, serif;
