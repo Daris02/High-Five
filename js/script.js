@@ -56,63 +56,62 @@ sr.reveal(propos,{
     distance:'30px'
 })
 sr.reveal('.valeur',{
-    scale:0.5,
-    reset:'true'
+    scale:0.5
 })
 sr.reveal('.valeurs',{
     scale:0.5,
-    delay:200,
-    reset:'true'
+    delay:200
 })
 sr.reveal(val,{
     origin:'left',
     distance:'30px',
-    reset:'true',
     delay:400
 })
 sr.reveal('.event',{
-    scale:0.5,
-    reset:'true'
+    scale:0.5
 })
 sr.reveal('.events',{
     scale:0.5,
-    delay:200,
-    reset:'true'
+    delay:200
 })
 sr.reveal('.containerHover',{
     origin:'left',
     distance:'30px',
-    reset:'true',
     delay:400
 })
 sr.reveal('.team',{
-    scale:0.5,
-    reset:'true'
+    scale:0.5
 })
 sr.reveal('.teams',{
     scale:0.5,
-    delay:200,
-    reset:'true'
+    delay:200
 })
 sr.reveal('.one',{
     opacity:0,
-    delay:400,
-    reset:'true'
+    delay:400
 })
 sr.reveal('.two',{
     opacity:0,
-    delay:600,
-    reset:'true'
+    delay:600
 })
 sr.reveal('.three',{
     opacity:0,
-    delay:800,
-    reset:'true'
+    delay:800
 })
 sr.reveal('.four',{
     opacity:0,
-    delay:1000,
-    reset:'true'
+    delay:1000
+})
+sr.reveal('.Ryan',{
+    opacity:0
+})
+sr.reveal('.join',{
+    opacity:0,
+    delay:100
+})
+sr.reveal('.info',{
+    opacity:0,
+    delay:300
 })
 
 

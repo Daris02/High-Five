@@ -10,14 +10,23 @@
   <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/styleD.css">
+  <link rel="stylesheet" href="css/animation.css">
   <script src="bootstrap-5.2.3-dist/js/bootstrap.js" defer></script>
   <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js" defer></script>
   <script src="js/jquery-3.6.3.min.js" defer></script>
   <script src="js/script.js" defer></script>
+  <script src="js/animation.js" defer></script>
   <title>HEI SCHOOL</title>
 </head>
 
 <body>
+  <div id="mainAnimation" style="width: 100vw;height: 100vh;">
+    <section id="animation">
+        <img src="image/left.png" alt="left" id="left">
+        <img src="image/middle.png" alt="middle" id="middle">
+        <img src="image/right.png" alt="right" id="right">
+    </section>
+</div>
   <header>
     <nav class="navbar bg-dark d-flex align-items-center sm-justify-content-between fixed-top">
       <div class="container-fluid justify-content-around  mx-15 ">
@@ -35,28 +44,28 @@
           <div class="offcanvas-body menu">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+                <a class="nav-link text-white active" aria-current="page" href="#">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#pricing">About</a>
+                <a class="nav-link text-white" href="#pricing">A PROPOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#valeur">Valeur de HEI</a>
+                <a class="nav-link text-white" href="#valeur">VALEUR DE HEI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#our_works">Events</a>
+                <a class="nav-link text-white" href="#our_works">EVENEMENTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#our_team">Our Team</a>
+                <a class="nav-link text-white" href="#our_team">NOTRE EQUIPE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#stats_testimonial">Statistiques</a>
+                <a class="nav-link text-white" href="#stats_testimonial">STATISTIQUES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#message">Nous rejoindre</a>
+                <a class="nav-link text-white" href="#message">NOUS REJOINDRE</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#footer">Nous contactez</a>
+                <a class="nav-link text-white" href="#footer">NOUS CONTACTEZ</a>
               </li>
             </ul>
           </div>
@@ -98,7 +107,7 @@
 
     <section id="pricing" class="container w-75">
       <div class="text-center ">
-        <h1 class="mt-3 cdtn">A propos</h1>
+        <h1 class="mt-3 cdtn fw-bold" style="font-family:'Times New Roman', Times, serif ;" >A propos</h1>
         <p class="fs-5 " id="definition">
           <span style="color: #dfa408;">HEI</span> est une école supérieure qui offre une formation professionalisante
           dans le domaine de l'Informatique
@@ -194,7 +203,7 @@
 
     <section class="mt-5 container w-50" id="valeur">
       <div class="text-center">
-          <h1 class="valeur">Les valeurs de <span class="text-warning">HEI</span></h1>
+          <h1 class="valeur fw-bold"style="font-family:'Times New Roman', Times, serif ;">Les valeurs de <span class="text-warning">HEI</span></h1>
           <p class="fs-5 valeurs">
               Chez HEI, nous donnons beaucoup d'importance aux trois points suivants: l'autonomie, l'entraide et la performance.
           </p>
@@ -252,7 +261,7 @@
     <!-- Our works -->
     <section id="our_works" class="my-5">
       <article class="text-center my-5 mx-auto w-50">
-        <h1 class="event">Events</h1>
+        <h1 class="event fw-bold"style="font-family:'Times New Roman', Times, serif ;">Évènements</h1>
         <p class="events">
           HEI organise des evenements pour augmenter l'experience de ces etudiants et/ou
           pour avoir plus de relation dans le monde professionnel.
@@ -411,7 +420,7 @@
 
     <section class="container" id="our_team">
       <article class="text-center">
-        <h1 class="team">Our team</h1>
+        <h1 class="team fw-bold"style="font-family:'Times New Roman', Times, serif ;">Notre equipe</h1>
         <p class="teams mx-auto" id="firstText">
           Un aperçu de l’équipe pédagogique.
         </p>
@@ -474,7 +483,7 @@
 
     <section class="container" id="stats_testimonial">
       <article class="text-center">
-        <h1>Statistiques</h1>
+        <h1 class="fw-bold" style="font-family:'Times New Roman', Times, serif ;">Statistiques</h1>
         <p class="mx-auto" id="firstText">
           Professionnels du monde entiers unis pour former les étudiants malgaches
           suivant les plus hauts standards
@@ -506,14 +515,14 @@
         </section>
       </div>
 
-      <div class="container mx-auto">
+      <div class="container Ryan mx-auto">
         <section class="text-center my-5">
           <div class="container w-75">
             <img src="image/Ryan.png" alt="mrRyan" class="img border rounded-circle mb-3 w-25">
           </div>
           <h2>Ryan Andriamahery</h2>
           <h6>Co-fondateur et Directeur des opérations,HEI</h6>
-          <article id="secondText" class="mx-auto w-50">
+          <article id="secondText" class="mx-auto">
             <div class="d-flex flex-row">
               <span>
                 <i class="fas fa-quote-left fa-1x mx-4"></i>
@@ -535,15 +544,15 @@
     </section>
 
     <section class="container my-5" id="message">
-      <article class="text-center mx-auto">
-        <h1 class="fw-bold mx-auto">Rejoignez la communauté de HEI</h1>
+      <article class="text-center mx-auto join">
+        <h1 class="fw-bold mx-auto"style="font-family:'Times New Roman', Times, serif ;">Rejoignez la communauté de HEI</h1>
         <p class="mx-auto w-50">
           Nous recrutons de nouveaux groupes tout au long de l'année.<br>
           Inscrivez-vous et nous vous informerons de la date de la prochaine rentrée.
         </p>
       </article>
 
-      <section class="container mt-2 mx-auto w-50">
+      <section class="container mt-2 mx-auto w-50 info">
         <div class="row  row-cols-1 row-cols-sm-1 row-cols-md-3 row-cols-lg-3 text-center mx-auto mt-5">
           <div class="col d-flex-column">
             <i class="fas fa-location-dot fa-2x"></i>
@@ -623,7 +632,7 @@
           </div>
           <div class="form-group text-center" id="file">
             <label for="cdr">
-              <h6>Relevé de certifié note du Bacc</h6>
+              <h6>Relevé de note certifié du Bacc</h6>
             </label>
             <input type="file" class="form-control-file">
           </div>
@@ -632,7 +641,7 @@
           <div id="error" class="my2">
             <h5 class="text-center text-danger">Remplissez toutes les cases!</h5>
           </div>
-          <button type="button" class="my-2 px-4 py-2" id="sendBtn">
+          <button type="button" class="my-2 px-5 py-2" id="sendBtn">
             <h5>S'inscrire</h5>
           </button>
           <div class="mx-auto d-flex flex-row align-items-center" style="width: 10vw;" id="confirmation">
@@ -648,7 +657,7 @@
   <footer id="footer" class="bg-dark">
     <article class="py-5">
       <section class="col-12 col-lg-6 col-sm-8 m-auto text-center">
-        <h2 class="text-light">Contact</h2>
+        <h2 class="text-light fw-bold"style="font-family:'Times New Roman', Times, serif ;">Contact</h2>
         <p class="text-secondary w-75 mx-auto">
           Nous recrutons de nouveaux groupes tout au long de l’année.
           Contactez-nous pour plus d'informations.
@@ -657,7 +666,7 @@
       <form action="input" class="d-flex justify-content-center flex-column flex-lg-row flex-sm-row"
         id="formulaire_footer">
         <input type="text" name="email" id="inputEmail" class="border-0 p-2 mx-1 col-sm-5 col-10 px-4"
-          placeholder="Entre your Email her">
+          placeholder="Entrez votre Email">
         <button type="submit" class="p-2 btn-outline-dark border-0 col-sm-2 col-md-1 col-3"
           id="btn_footer">submit</button>
       </form>
@@ -685,7 +694,7 @@
         <ul class="list-unstyled col-lg-2 col-sm-12 px-4 linkHover" id="liste_footer">
           <h5>Social</h5>
           <li onclick="window.location.href='https://www.facebook.com/hei.school'">facebook</li>
-          <li onclick="window.location.href='https://www.instagram.com/hei.school'">instagrame</li>
+          <li onclick="window.location.href='https://www.instagram.com/hei.school'">instagram</li>
           <li onclick="window.location.href='https://www.linkedin.com/company/hei-school/'">linkedin</li>
         </ul>
       </section>
